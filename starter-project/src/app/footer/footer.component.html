@@ -1,0 +1,14 @@
+<div class='company'>
+  <h5>{{company.name}} <sub> {{company.copyright}}</sub></h5>
+  <button (click)='toggleDetails()'>
+    <span *ngIf='isCollapsed'>expand - address</span>
+    <span *ngIf='!isCollapsed'>collapse - address</span>
+  </button>
+  <div class='left-border' *ngIf='!isCollapsed'>
+    <p>{{company.address}}</p>
+    <p>industry: {{company.industry}}</p>
+    <p>phone: {{company.phone}}</p>
+    <p>fax: {{company.fax}}</p>
+  </div>
+  
+</div>

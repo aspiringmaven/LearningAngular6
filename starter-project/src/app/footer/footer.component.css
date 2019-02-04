@@ -1,0 +1,9 @@
+.company {
+    border: 3px solid gray;
+    padding: 15px;
+}
+
+.left-border {
+    border-left: 2px solid silver;
+    padding: 10px;
+}
